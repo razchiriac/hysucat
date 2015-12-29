@@ -256,19 +256,21 @@ a:hover {
 }
 
 .video > .news {
-	height: 240px;
+	height: 222px;
 	background-color: rgba(0, 0, 0, 0.6);
 	position: relative;
-	margin-top: 99px;
 	color: #FFF;
 	padding-top: 10px;
 }
+
 .video > .news .info {
 	padding-bottom: 10px;
 }
+
 .video > .news .carousel-inner .container {
 	width: 70%;
 }
+
 .video > .news .carousel-indicators {
 	display: none;
 }
@@ -280,13 +282,32 @@ a:hover {
 	float: left;
 	border-right: 1px solid #FFF;
 }
+
 .video > .news .carousel-inner .container .content .title {
 	font-size: 1.1em;
 }
+
 .video > .news .carousel-inner .container .content .time {
 	font-size: 0.9em;
 	color: gray;
 }
+
+.footer {
+	height: 420px;
+	position: relative;
+	background-image: url(../img/footer.png);
+	background-size: 140%;
+	background-position-x: 50%;
+	background-repeat: no-repeat;
+	/* width: 100% !important; */
+	/* left: -20%; */
+	/* height: auto; */
+	color: #FFF;
+	margin-top: -107px;
+	z-index: 0;
+	background-color: #151616;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 
