@@ -1,11 +1,28 @@
-div {
+div,
+button {
 	transition: all ease 0.2s;
+}
+
+.btn {
+	background: none;
+	border: 2px solid #FFF;
+	color: #FFF;
+	text-transform: capitalize;
+	border-radius: 0;
+	min-width: 145px;
+}
+
+.btn:hover {
+	color: #FF7800;
 }
 
 .container-fluid {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+
+
+/*nav*/
 
 .navbar .top {
 	height: 90px;
@@ -57,6 +74,68 @@ a:hover {
 	z-index: 10;
 	margin-left: -12px;
 }
+
+
+/*/nav*/
+
+
+/*slider*/
+
+.top-slider {
+	position: relative;
+	margin-top: -50px;
+	height: auto;
+	width: 100%;
+	border-bottom: 8px solid #FF7800;
+}
+
+.top-slider .carousel-inner {
+	width: 150% !important;
+	left: -25% !important;
+}
+
+.top-slider .carousel-indicators {
+	display: none;
+}
+
+.top-slider .carousel-caption {
+	margin: 0 auto;
+	width: 53%;
+	text-align: center;
+}
+
+.top-slider .carousel-caption ul {
+	list-style: none;
+	display: inline;
+}
+
+.top-slider .carousel-caption ul li {
+	width: 24%;
+	float: left;
+	font-size: 1.3em;
+}
+
+.top-slider .carousel-caption ul li:nth-child(1) {
+	width: 25%;
+}
+
+.top-slider .carousel-caption ul li:nth-child(2) {
+	width: 35%;
+	border-left: 1px solid #FF7800;
+	border-right: 1px solid #FF7800;
+}
+
+.top-slider .carousel-caption ul li:nth-child(3) {
+	width: 20%;
+}
+
+.top-slider .carousel-caption ul li:nth-child(4) {
+	width: 16%;
+	margin-top: -4px;
+}
+
+
+/*/slider*/
 
 
 /* Small devices (tablets, 768px and up) */
