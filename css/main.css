@@ -1,0 +1,52 @@
+.container-fluid {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.navbar .top {
+	height: 90px;
+	border-bottom: 8px solid #FF7800;
+	background: rgba(0, 0, 0, 0.25);
+	color: #FFF;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-right: 35px;
+}
+
+.navbar .bottom .container {
+	height: 50px;
+	position: relative;
+	top: -29px;
+}
+
+.navbar .bottom .left {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: inherit;
+	background: #000;
+	border: 5px solid silver;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+}
+
+.navbar .bottom .right {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: inherit;
+	background: #000;
+	border: 5px solid silver;
+	-webkit-transform: skew(30deg);
+	-moz-transform: skew(30deg);
+	-o-transform: skew(30deg);
+}
+
+.navbar .bottom .logo {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -62px;
+	z-index: 10;
+}
