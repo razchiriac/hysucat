@@ -8,6 +8,7 @@ html,
 body {
 	width: 101%;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 div,
@@ -187,7 +188,7 @@ a:hover {
 	background-image: url(../img/slider-tabs.png);
 	background-repeat: no-repeat;
 	width: auto;
-	margin: -16px auto;
+	margin: -16px -100px;
 	background-size: contain;
 	padding: 14px 30px;
 }
@@ -195,17 +196,57 @@ a:hover {
 .second-slider .carousel-indicators li {
 	background-color: #FFF;
 }
+
 .second-slider .carousel-indicators .active {
 	background-color: #FF7800;
 	border: none;
 }
+
+
 /*/slider*/
 
-.scroll	{
+.scroll {
 	background-color: #FF7800;
 	height: 65px;
 	padding-bottom: 18px;
 	font-size: 44px;
+}
+
+.video {
+	height: 800px;
+	background-image: url(../img/layer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.video > .container {
+	text-align: center;
+	padding-top: 25%;
+	color: #FFF;
+}
+
+.video > .container .play {
+	font-size: 85px;
+	width: 140px;
+	height: 140px;
+	border: 5px solid rgba(255, 255, 255, 0.6);
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	position: relative;
+	margin: 10px auto;
+	padding-top: 4px;
+	padding-left: 15px;
+}
+
+.video > .container p {
+	font-size: 1.3em;
+	font-weight: 200;
+	letter-spacing: 6px;
+}
+.video > .container h1 {
+	font-weight: 900;
+	margin-top: -14px;
 }
 
 
