@@ -1,6 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic);
+body,
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+	width: 101%;
+	margin: 0;
+}
+
 div,
 button {
 	transition: all ease 0.2s;
+}
+
+.navbar-fixed-top {
+	position: absolute;
 }
 
 .btn {
@@ -19,6 +35,7 @@ button {
 .container-fluid {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+	width: 100%;
 }
 
 
@@ -130,8 +147,57 @@ a:hover {
 }
 
 .top-slider .carousel-caption ul li:nth-child(4) {
-	width: 16%;
+	width: 14%;
 	margin-top: -4px;
+}
+
+.second-slider {
+	position: relative;
+	background-image: url(../img/fiber.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100% !important;
+	height: auto;
+	color: #FFF;
+}
+
+.second-slider .carousel {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.second-slider .carousel .container {
+	width: 80%;
+}
+
+.second-slider h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.second-slider p {
+	padding-bottom: 20px;
+}
+
+.second-slider .carousel-indicators {
+	position: absolute;
+	top: 0;
+	background-image: url(../img/slider-tabs.png);
+	background-repeat: no-repeat;
+	width: auto;
+	margin: -16px auto;
+	background-size: contain;
+	padding: 14px 30px;
+}
+
+.second-slider .carousel-indicators li {
+	background-color: #FFF;
+}
+.second-slider .carousel-indicators .active {
+	background-color: #FF7800;
+	border: none;
 }
 
 
