@@ -14,33 +14,37 @@
 }
 
 .navbar .bottom .container {
-	height: 50px;
+	height: 75px;
 	position: relative;
 	top: -29px;
+	background-image: url('../img/nav.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.navbar .bottom .left {
-	position: relative;
-	float: left;
-	width: 50%;
-	height: inherit;
-	background: #000;
-	border: 5px solid silver;
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
-}
-
+.navbar .bottom .left,
 .navbar .bottom .right {
 	position: relative;
 	float: left;
 	width: 50%;
-	height: inherit;
-	background: #000;
-	border: 5px solid silver;
-	-webkit-transform: skew(30deg);
-	-moz-transform: skew(30deg);
-	-o-transform: skew(30deg);
+	z-index: 999;
+}
+
+.navbar .bottom .list > div {
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+.navbar .bottom .list > div > a {
+	color: #FFF;
+	text-decoration: none;
+	z-index: 999;
+	transition: all ease 0.2s;
+}
+
+.navbar .bottom .list > div > a:hover {
+	color: #FF7800;
 }
 
 .navbar .bottom .logo {
@@ -49,4 +53,161 @@
 	text-align: center;
 	margin-top: -62px;
 	z-index: 10;
+	margin-left: -12px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+	.navbar .bottom .list {
+		text-transform: uppercase;
+		font-size: 0.9em;
+		height: inherit;
+		padding-top: 15px;
+	}
+	.navbar .bottom .right .list {
+		padding-left: 50px;
+	}
+	.navbar .bottom .logo {
+		margin-top: -40px;
+	}
+	.navbar .bottom .logo img {
+		width: 145px;
+	}
+	/*	left */
+	div.bottom > div > div.left > div > div:nth-child(1) {
+		width: 82px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(2) {
+		width: 77px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(3) {
+		width: 64px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(4) {
+		width: 60px;
+	}
+	/*	/left */
+	/*	right */
+	div.bottom > div > div.right > div > div:nth-child(1) {
+		width: 78px;
+		padding-left: 14px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(2) {
+		width: 79px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(3) {
+		width: 62px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(4) {
+		width: 80px;
+	}
+	/*	/right */
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	.navbar .bottom .list {
+		text-transform: uppercase;
+		font-size: 1em;
+		height: inherit;
+		padding-top: 20px;
+	}
+	.navbar .bottom .right .list {
+		padding-left: 50px;
+	}
+	.navbar .bottom .logo {
+		margin-top: -40px;
+	}
+	.navbar .bottom .logo img {
+		width: 145px;
+	}
+	/*	left */
+	div.bottom > div > div.left > div > div:nth-child(1) {
+		width: 110px;
+		padding-left: 12px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(2) {
+		width: 100px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(3) {
+		width: 85px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(4) {
+		width: 90px;
+	}
+	/*	/left */
+	/*	right */
+	div.bottom > div > div.right > div > div:nth-child(1) {
+		width: 116px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(2) {
+		width: 102px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(3) {
+		width: 80px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(4) {
+		width: 104px;
+	}
+	/*	/right */
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+	.navbar .bottom .list {
+		text-transform: uppercase;
+		font-size: 1.4em;
+		height: inherit;
+		padding-top: 22px;
+	}
+	.navbar .bottom .right .list {
+		padding-left: 50px;
+	}
+	.navbar .bottom .logo {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		margin-top: -62px;
+		z-index: 10;
+		margin-left: -12px;
+	}
+	.navbar .bottom .logo img {
+		width: 201px;
+	}
+	/*	left */
+	div.bottom > div > div.left > div > div:nth-child(1) {
+		width: 135px;
+		padding-left: 16px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(2) {
+		width: 122px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(3) {
+		width: 100px;
+	}
+	div.bottom > div > div.left > div > div:nth-child(4) {
+		width: 110px;
+	}
+	/*	/left */
+	/*	right */
+	div.bottom > div > div.right > div > div:nth-child(1) {
+		width: 150px;
+		padding-left: 36px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(2) {
+		width: 123px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(3) {
+		width: 96px;
+	}
+	div.bottom > div > div.right > div > div:nth-child(4) {
+		width: 126px;
+	}
+	/*	/right */
 }
