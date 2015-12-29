@@ -199,9 +199,14 @@ a:hover {
 	background-color: #FF7800;
 	border: none;
 }
-
-
 /*/slider*/
+
+.scroll	{
+	background-color: #FF7800;
+	height: 65px;
+	padding-bottom: 18px;
+	font-size: 44px;
+}
 
 
 /* Small devices (tablets, 768px and up) */
